@@ -16,4 +16,11 @@ describe('String#beats?') do
   it("will return false when scissors loses to rock") do
     expect('scissors'.beats?('rock')).to(eq(false))
   end
+  #paper tests
+  it("will return true when paper beats rock") do
+    expect('paper'.beats?('rock')).to(eq(true))
+  end
+  it("will return false when paper loses to scissors") do
+    expect('paper'.beats?('scissors')).to(eq(false))
+  end
 end
