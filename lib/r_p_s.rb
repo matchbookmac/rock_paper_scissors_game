@@ -14,6 +14,12 @@ class String
       elsif(player2.eql?('rock'))
         false
       end
+    elsif(player1.eql?('paper'))
+      if(player2.eql?('rock'))
+        true
+      elsif(player2.eql?('scissors'))
+        false
+      end
     end
   end
 end
