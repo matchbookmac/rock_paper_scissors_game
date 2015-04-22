@@ -7,9 +7,6 @@ describe('the rock paper scissors game path', {:type => :feature}) do
     visit('/')
     fill_in('player1', :with => 'rock')
     click_button('Send')
-    expect(page).to have_content('Player 2\'s move')
-    fill_in('player2', :with => 'scissors')
-    click_button('Who won?')
     expect(page).to have_content('Player 1 won!')
   end
 end
