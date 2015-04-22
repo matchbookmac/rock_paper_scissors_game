@@ -1,2 +1,10 @@
 <h1>Who wins</h1>
-<h2><%= @result %></h2>
+<h2><%= if(@result.eql?(false))
+          'Player 2 Wins!'
+        elsif(@result.eql?(true))
+          'Player 1 Wins!'
+        elsif(@result.eql?('tie'))
+          'It was a tie!'
+        else
+          'Uh oh, something went wrong, try again'
+        end %></h2>
