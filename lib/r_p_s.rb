@@ -8,8 +8,12 @@ class String
       elsif(player2.eql?('paper'))
         false
       end
-    else
-      false
+    elsif(player1.eql?('scissors'))
+      if(player2.eql?('paper'))
+        true
+      elsif(player2.eql?('rock'))
+        false
+      end
     end
   end
 end
