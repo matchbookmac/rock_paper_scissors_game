@@ -2,7 +2,9 @@ class String
   define_method(:beats?) do |play|
     player1 = self
     player2 = play
-    if(player1.eql?('rock'))
+    if(player1.eql?(player2))
+      'tie'
+    elsif(player1.eql?('rock'))
       if(player2.eql?('scissors'))
         true
       elsif(player2.eql?('paper'))

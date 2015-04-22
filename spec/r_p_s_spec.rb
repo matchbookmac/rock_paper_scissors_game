@@ -23,4 +23,14 @@ describe('String#beats?') do
   it("will return false when paper loses to scissors") do
     expect('paper'.beats?('scissors')).to(eq(false))
   end
+  #tie test
+  it("will return tie when player 1 and player 2 play the same move") do
+    expect('rock'.beats?('rock')).to(eq('tie'))
+  end
+  it("will return tie when player 1 and player 2 play the same move") do
+    expect('scissors'.beats?('scissors')).to(eq('tie'))
+  end
+  it("will return tie when player 1 and player 2 play the same move") do
+    expect('paper'.beats?('paper')).to(eq('tie'))
+  end
 end
